@@ -1,34 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Mina:wght@400;700&family=Nabla&family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quintessential&display=swap');
 /* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Mina", sans-serif;
+    
 }
-
+/*-------------------------------------------------------------------*/
 body {
-    line-height: 1.6;
+    font-family: "Quintessential", serif;
+    line-height: 3;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #610909;
     padding: 10px;
 }
 
 header {
+    margin: 20px auto;
     text-align: center;
     padding: 20px;
     background-color: #4CAF50;
     color: #fff;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(111, 6, 113, 0.1);
+    max-width: 800px;
 }
 
 header h1 {
     margin-bottom: 10px;
 }
-
+/*-------------------------------------------------------------------*/
 nav {
     margin: 20px auto;
     text-align: center;
+    background: #b30086;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(111, 6, 113, 0.1);
+    max-width: 800px;
 }
 
 nav ul {
@@ -43,48 +51,81 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #0a1d7a;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #2e7031;
+    color: #09e5f9;
+}
+/*-------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
 
+/* For Smaller Phones */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+/*-------------------------------------------------------------------*/
 section {
     margin: 20px auto;
-    padding: 15px;
+    padding: 20px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
 
 section h2 {
     margin-bottom: 10px;
-    color: #4CAF50;
+    color: #03074e;
 }
 
 section ul, section ol {
     margin-left: 20px;
 }
-
+/*-------------------------------------------------------------------*/
 footer {
+    margin: 20px auto;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
+    background-color: #18caa0;
     color: #fff;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(111, 6, 113, 0.1);
+    max-width: 800px;  
 }
 
 footer a {
-    color: #4CAF50;
+    color: #132171;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+/*-------------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #07ca0b;
+    color: #e80b16;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s ease;
+}
+.back-to-top:hover {
+    background: #072ce6;
 }
